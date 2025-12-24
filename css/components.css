@@ -638,9 +638,8 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background-color: #233547;
-}
-
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    }
 
      .hero-image {
         display: none;
