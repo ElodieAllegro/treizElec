@@ -597,7 +597,9 @@
     display: flex;
     gap: 2rem;
 }
-
+.linkWebsite{
+  text-decoration:none;
+}
 .footer-links a {
     color: #ccc;
     text-decoration: none;
