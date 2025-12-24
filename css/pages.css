@@ -94,12 +94,6 @@
     box-shadow: var(--shadow-medium);
 }
 
-.contact-info {
-    background-color: var(--gray-light);
-    padding: 3rem;
-    border-radius: var(--border-radius);
-}
-
 .contact-info h3 {
     color: var(--primary-color);
     margin-bottom: 1.5rem;
