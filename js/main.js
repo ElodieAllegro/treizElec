@@ -454,10 +454,11 @@ function logout() {
 // Admin
 function initializeAdmin() {
     if (!isAdmin) {
-        window.location.href = 'admin-login.html';
+        // Admin login page not implemented
+        console.warn('Admin functionality not available');
         return;
     }
-    
+
     initializeAdminDashboard();
 }
 
