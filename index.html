@@ -33,9 +33,8 @@
                 
                 <nav class="nav desktop-nav">
                     <a href="#accueil" class="nav-link animate-fade-up" style="animation-delay: 0.1s">Accueil</a>
-                    <a href="calculateur.html" class="nav-link animate-fade-up" style="animation-delay: 0.2s">Calculateur</a>
-                    <a href="realisations.html" class="nav-link animate-fade-up" style="animation-delay: 0.3s">Nos réalisations</a>
-                    <a href="contact.html" class="nav-link animate-fade-up" style="animation-delay: 0.4s">Contact</a>
+                    <a href="realisations.html" class="nav-link animate-fade-up" style="animation-delay: 0.2s">Nos réalisations</a>
+                    <a href="contact.html" class="nav-link animate-fade-up" style="animation-delay: 0.3s">Contact</a>
                 </nav>
 
                 <button class="mobile-menu-btn animate-fade-up" id="mobileMenuBtn" style="animation-delay: 0.5s">
@@ -47,7 +46,6 @@
             
             <nav class="mobile-nav" id="mobileNav">
                 <a href="#accueil" class="nav-link">Accueil</a>
-                <a href="calculateur.html" class="nav-link">Calculateur</a>
                 <a href="realisations.html" class="nav-link">Nos réalisations</a>
                 <a href="contact.html" class="nav-link">Contact</a>
             </nav>
@@ -57,21 +55,32 @@
     <main>
         <section class="hero" id="accueil">
             <div class="hero-image" data-speed="0.5">
-                <img src="/assets/img/img-cover.svg" alt="">
+                <img src="./assets/img/heroImg.svg" alt="">
                 <div class="hero-overlay"></div>
             </div>
             <div class="hero-content">
+                <span class="hero-badge animate-fade-up">Électricien diplomé</span>
                 <h1 class="hero-title animate-slide-up">Votre électricien de confiance à Marseille et ses environs</h1>
                 <p class="hero-subtitle animate-slide-up" style="animation-delay: 0.3s">Interventions rapides, travaux de qualité, devis gratuit</p>
-                <button class="btn btn-primary btn-large animate-scale-up" style="animation-delay: 0.6s" onclick="window.location.href='contact.html'">
+                <button class="btn btn-primary btn-large btn-rounded animate-scale-up" style="animation-delay: 0.6s" onclick="window.location.href='contact.html'">
                     Demander un devis
                 </button>
+                <div class="hero-services-buttons">
+                    <button class="service-btn animate-fade-up" style="animation-delay: 0.7s">Installation électrique</button>
+                    <button class="service-btn animate-fade-up" style="animation-delay: 0.8s">Borne IRVE</button>
+                    <button class="service-btn animate-fade-up" style="animation-delay: 0.9s">Mise aux normes</button>
+                </div>
             </div>
-            <div class="scroll-indicator animate-bounce">
+            <!-- <div class="scroll-indicator animate-bounce">
                 <svg viewBox="0 0 24 24" fill="currentColor">
                     <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
                 </svg>
-            </div>
+            </div> -->
+            <div class="scroll-indicator animate-bounce">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+    </svg>
+</div>
         </section>
 
         <section class="services scroll-reveal" id="services">
@@ -381,7 +390,6 @@
                 <div class="footer-section animate-on-scroll" data-delay="0.3">
                     <h3>Services</h3>
                     <ul>
-                        <li><a href="calculateur.html">Calculateur de prix</a></li>
                         <li><a href="realisations.html">Nos réalisations</a></li>
                         <li><a href="contact.html">Devis gratuit</a></li>
                     </ul>
@@ -399,10 +407,6 @@
             
             <div class="footer-bottom animate-on-scroll" data-delay="0.5">
                 <p>&copy; 2024 Treize Elec. Tous droits réservés.</p>
-                <div class="footer-links">
-                    <a href="login.html">Espace client</a>
-                    <a href="admin-login.html">Espace admin</a>
-                </div>
             </div>
         </div>
     </footer>

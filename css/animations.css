@@ -241,14 +241,15 @@
     bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
-    color: white;
+    color: #0844E9; /* Bleu électrique */
     animation: bounce 2s infinite;
     cursor: pointer;
 }
 
 .scroll-indicator svg {
-    width: 24px;
-    height: 24px;
+    width: 40px; /* Plus gros qu'avant (était 24px) */
+    height: 40px;
+    filter: drop-shadow(0 0 8px rgba(8, 68, 233, 0.5)); /* Effet lumineux */
 }
 
 /* Service Cards */

@@ -19,7 +19,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    height: 100px;
+    padding: 20px;
 }
 
 .logo {
@@ -153,7 +154,7 @@
 /* Hero Section */
 .hero {
     position: relative;
-    height: 110vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -182,7 +183,6 @@
     left: 0;
     width: 60%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 158, 255, 0.4));
     z-index: -1;
 }
 
@@ -191,21 +191,60 @@
     z-index: 1;
     text-align: left;
     color: white;
-    max-width: 600px;
-    padding: 0 40px;
+    max-width: 650px;
+    padding: 0 20px;
     margin-left: 40px;
 }
 
 .hero-title {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
+    font-size: 4.5rem;
+    margin-bottom: 1.5rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero-subtitle {
-    font-size: 1.3rem;
-    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    margin-bottom: 2.5rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.hero-badge {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: white;
+    color: var(--text-color);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    border-radius: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero-services-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.service-btn {
+    padding: 12px 20px;
+    background-color: white;
+    color: var(--text-color);
+    border: none;
+    border-radius: 0;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.service-btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 158, 255, 0.4);
 }
 
 /* Services */
@@ -592,6 +631,21 @@
 }
 
 @media (max-width: 768px) {
+    .hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #233547;
+}
+
+
+     .hero-image {
+        display: none;
+    }
+    
     .hero-overlay {
         width: 100%;
         background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 158, 255, 0.3));
@@ -604,13 +658,17 @@
     }
     
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
-    
+
     .hero-subtitle {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
     }
-    
+
+    .hero-services-buttons {
+        justify-content: center;
+    }
+
     .cookie-content {
         flex-direction: column;
         text-align: center;
@@ -648,13 +706,22 @@
     }
     
     .hero-title {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
-    
+
     .hero-subtitle {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
-    
+
+    .hero-services-buttons {
+        justify-content: center;
+    }
+
+    .service-btn {
+        font-size: 0.85rem;
+        padding: 10px 16px;
+    }
+
     .service-card,
     .testimonial-card {
         padding: 1.5rem;

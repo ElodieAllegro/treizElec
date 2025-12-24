@@ -1,131 +1,5 @@
 /* Pages spécifiques */
 
-/* Page Calculateur */
-.calculator {
-    padding: 120px 0 80px;
-    min-height: 100vh;
-}
-
-.calculator-form {
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: white;
-    padding: 3rem;
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow-medium);
-}
-
-.services-list {
-    display: grid;
-    gap: 1rem;
-    margin-bottom: 2rem;
-}
-
-.service-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.5rem;
-    border: 2px solid var(--border-color);
-    border-radius: var(--border-radius);
-    transition: var(--transition);
-}
-
-.service-item:hover {
-    border-color: var(--primary-color);
-}
-
-.service-item.selected {
-    border-color: var(--primary-color);
-    background-color: rgba(0, 158, 255, 0.05);
-}
-
-.service-info {
-    flex: 1;
-}
-
-.service-name {
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-}
-
-.service-description {
-    color: var(--text-light);
-    font-size: 0.9rem;
-    margin-bottom: 0.5rem;
-}
-
-.service-price {
-    color: var(--primary-color);
-    font-weight: 600;
-}
-
-.service-controls {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.quantity-control {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.quantity-btn {
-    width: 32px;
-    height: 32px;
-    border: 1px solid var(--border-color);
-    background-color: white;
-    border-radius: 4px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-    transition: var(--transition);
-}
-
-.quantity-btn:hover {
-    background-color: var(--primary-color);
-    color: white;
-    border-color: var(--primary-color);
-}
-
-.quantity-input {
-    width: 60px;
-    text-align: center;
-    border: 1px solid var(--border-color);
-    border-radius: 4px;
-    padding: 0.5rem;
-}
-
-.service-checkbox {
-    width: 20px;
-    height: 20px;
-    accent-color: var(--primary-color);
-}
-
-.total-section {
-    background-color: var(--gray-light);
-    padding: 2rem;
-    border-radius: var(--border-radius);
-    text-align: center;
-}
-
-.total-amount {
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-}
-
-.total-label {
-    font-size: 1.1rem;
-    color: var(--text-color);
-    margin-bottom: 1rem;
-}
-
 /* Page Réalisations */
 .realizations-page {
     padding: 120px 0 80px;
@@ -457,50 +331,41 @@
     .contact-content {
         grid-template-columns: 1fr 1fr;
     }
-    
-    .services-list {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
+
     .dashboard-nav {
         flex-wrap: wrap;
     }
 }
 
 @media (min-width: 1024px) {
-    .services-list {
-        grid-template-columns: 1fr;
-    }
-    
     .filter-tabs {
         flex-wrap: nowrap;
     }
 }
 
 @media (max-width: 768px) {
-    .calculator-form,
     .contact-form,
     .contact-info,
     .auth-container,
     .legal-content {
         padding: 2rem;
     }
-    
+
     .dashboard-header {
         flex-direction: column;
         gap: 1rem;
         text-align: center;
     }
-    
+
     .filter-tabs {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .table {
         font-size: 0.9rem;
     }
-    
+
     .table th,
     .table td {
         padding: 0.75rem 0.5rem;
@@ -512,18 +377,8 @@
         width: 95%;
         padding: 1.5rem;
     }
-    
+
     .table {
         font-size: 0.8rem;
-    }
-    
-    .service-item {
-        flex-direction: column;
-        text-align: center;
-        gap: 1rem;
-    }
-    
-    .service-controls {
-        justify-content: center;
     }
 }
