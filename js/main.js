@@ -64,7 +64,7 @@ let realizations = [
         category: 'Installation',
         location: 'Marseille 8ème',
         description: 'Installation électrique complète pour villa de 200m²',
-        image: 'https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&w=800'
+        image: '/assets/img/realisation1.png'
     },
     {
         id: 2,
@@ -72,7 +72,7 @@ let realizations = [
         category: 'Rénovation',
         location: 'Marseille Centre',
         description: 'Rénovation électrique appartement haussmannien',
-        image: 'https://images.pexels.com/photos/834892/pexels-photo-834892.jpeg?auto=compress&cs=tinysrgb&w=800'
+        image: '/assets/img/realisation2.png'
     },
     {
         id: 3,
@@ -80,7 +80,7 @@ let realizations = [
         category: 'Industriel',
         location: 'Zone Nord',
         description: 'Installation électrique pour entrepôt industriel',
-        image: 'https://images.pexels.com/photos/159358/electrical-electricity-building-oil-159358.jpeg?auto=compress&cs=tinysrgb&w=800'
+        image: '/assets/img/realisation3.png'
     },
     {
         id: 4,
@@ -88,23 +88,7 @@ let realizations = [
         category: 'Domotique',
         location: 'Aix-en-Provence',
         description: 'Installation système domotique maison connectée',
-        image: 'https://images.pexels.com/photos/327540/pexels-photo-327540.jpeg?auto=compress&cs=tinysrgb&w=800'
-    },
-    {
-        id: 5,
-        title: 'Éclairage LED',
-        category: 'Installation',
-        location: 'Cassis',
-        description: 'Installation éclairage LED économique',
-        image: 'https://images.pexels.com/photos/442150/pexels-photo-442150.jpeg?auto=compress&cs=tinysrgb&w=800'
-    },
-    {
-        id: 6,
-        title: 'Tableau électrique',
-        category: 'Rénovation',
-        location: 'La Ciotat',
-        description: 'Remplacement tableau électrique aux normes',
-        image: 'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800'
+        image: '/assets/img/realisation4.png'
     }
 ];
 
