@@ -43,13 +43,6 @@
     background-color: #e8eef1;
 }
 
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 0;
-}
-
 .logo {
     display: flex;
     align-items: center;
@@ -61,14 +54,22 @@
     transition: var(--transition);
 }
 
+.header.scrolled .logo {
+    color: var(--text-color);
+}
 
-.logo img {
-    height: 80px;
-    width: auto;
-    background: white;
-    padding: 10px;
-    border-radius: 50%;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color);
+    border-radius: var(--border-radius);
+    padding: 8px;
+    color: white;
+}
+
+.logo-text {
+    font-size: 1.8rem;
+    font-weight: 700;
 }
 
 .desktop-nav {
