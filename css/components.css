@@ -50,19 +50,6 @@
     padding: 15px 0;
 }
 
-.logo-box {
-    position: absolute;
-    top: -90px;
-    left: 2rem;
-    background-color: #fff;
-    padding: 1rem;
-    border-radius: 0 0 40px 40px;
-    box-shadow: 0 1px 8px #0000009c;
-    z-index: 10;
-    will-change: transform;
-    transform: translateZ(0);
-}
-
 .logo {
     display: flex;
     align-items: center;
@@ -71,6 +58,10 @@
 .logo img {
     height: 80px;
     width: auto;
+    background: white;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .desktop-nav {
