@@ -359,7 +359,7 @@ function initializeContact() {
 
 function handleContactSubmit(e) {
     e.preventDefault();
-    
+
     const formData = new FormData(e.target);
     const data = {
         name: formData.get('name'),
@@ -368,16 +368,47 @@ function handleContactSubmit(e) {
         subject: formData.get('subject'),
         message: formData.get('message')
     };
-    
+
     // Validation
     if (!data.name || !data.email || !data.message) {
-        alert('Veuillez remplir tous les champs obligatoires');
+        showNotificationModal('Champs requis', 'Veuillez remplir tous les champs obligatoires', 'error');
         return;
     }
-    
+
     // Simulation d'envoi
-    alert('Votre message a été envoyé avec succès. Nous vous recontacterons dans les plus brefs délais.');
+    showNotificationModal('Message envoyé', 'Votre message a été envoyé avec succès. Nous vous recontacterons dans les plus brefs délais.', 'success');
     e.target.reset();
+}
+
+// Notification Modal
+function showNotificationModal(title, message, type = 'success') {
+    const modal = document.getElementById('notificationModal');
+    const titleElement = document.getElementById('notificationTitle');
+    const messageElement = document.getElementById('notificationMessage');
+    const icon = modal.querySelector('.notification-icon');
+
+    if (modal && titleElement && messageElement) {
+        titleElement.textContent = title;
+        messageElement.textContent = message;
+
+        // Changer l'icône selon le type
+        if (type === 'error') {
+            icon.style.backgroundColor = '#dc3545';
+            icon.querySelector('svg').innerHTML = '<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>';
+        } else {
+            icon.style.backgroundColor = 'var(--primary-color)';
+            icon.querySelector('svg').innerHTML = '<path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>';
+        }
+
+        modal.classList.add('show');
+    }
+}
+
+function closeNotificationModal() {
+    const modal = document.getElementById('notificationModal');
+    if (modal) {
+        modal.classList.remove('show');
+    }
 }
 
 // Authentification

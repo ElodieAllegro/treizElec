@@ -205,6 +205,20 @@
         </div>
     </footer>
 
+    <!-- Modal de notification -->
+    <div class="notification-modal" id="notificationModal">
+        <div class="notification-modal-content">
+            <div class="notification-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                </svg>
+            </div>
+            <h3 class="notification-title" id="notificationTitle">Message envoyé</h3>
+            <p class="notification-message" id="notificationMessage">Votre message a été envoyé avec succès. Nous vous recontacterons dans les plus brefs délais.</p>
+            <button class="btn btn-primary" onclick="closeNotificationModal()">Fermer</button>
+        </div>
+    </div>
+
     <script src="js/main.js"></script>
 </body>
 </html>
