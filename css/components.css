@@ -54,6 +54,12 @@
     transition: var(--transition);
 }
 
+.logo img {
+    background: transparent;
+    height: 80px;
+    width: auto;
+}
+
 .header.scrolled .logo {
     color: var(--text-color);
 }
