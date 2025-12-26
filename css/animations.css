@@ -326,7 +326,7 @@
     border-radius: var(--border-radius);
 }
 
-.realization-image img {
+//.realization-image img {
     transition: transform 0.8s var(--animation-easing-out);
 }
 
