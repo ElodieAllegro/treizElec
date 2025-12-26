@@ -173,7 +173,8 @@ p {
 }
 
 /* Trust Section */
-.trust-section {
+.trust-section,
+.partners-section {
     padding: 80px 0;
     background-color: white;
     overflow: hidden;
