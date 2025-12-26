@@ -98,8 +98,33 @@ let isAdmin = false;
 
 // Initialisation
 document.addEventListener('DOMContentLoaded', function() {
+    initializePageLoader();
     initializeApp();
 });
+
+// Gestion du loader
+function initializePageLoader() {
+    const loader = document.getElementById('pageLoader');
+    if (!loader) return;
+
+    // Vérifier si l'utilisateur a déjà vu le loader
+    const hasSeenLoader = localStorage.getItem('hasSeenLoader');
+
+    if (hasSeenLoader === 'true') {
+        // Masquer immédiatement le loader
+        loader.style.display = 'none';
+    } else {
+        // Afficher le loader pendant 2 secondes
+        setTimeout(() => {
+            loader.style.opacity = '0';
+            setTimeout(() => {
+                loader.style.display = 'none';
+                // Sauvegarder que l'utilisateur a vu le loader
+                localStorage.setItem('hasSeenLoader', 'true');
+            }, 500); // Attendre la fin de la transition d'opacité
+        }, 2000);
+    }
+}
 
 function initializeApp() {
     // Vérifier l'authentification
