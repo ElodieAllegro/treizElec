@@ -40,7 +40,12 @@
 }
 
 .header-main {
-    background-color: #e8eef1;
+    background-color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.header.scrolled .header-main {
+    background-color: white;
 }
 
 .header-content {
@@ -58,7 +63,19 @@
 .logo img {
     height: 80px;
     width: auto;
-   background: transparent;
+    background: transparent;
+}
+
+.logo span {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+    transition: var(--transition);
+}
+
+.header.scrolled .logo span {
+    color: var(--text-color);
 }
 
 .desktop-nav {
@@ -68,14 +85,22 @@
 }
 
 .nav-link {
-    color: var(--text-color);
+    color: white;
     text-decoration: none;
     font-weight: 500;
     transition: var(--transition);
     position: relative;
 }
 
+.header.scrolled .nav-link {
+    color: var(--text-color);
+}
+
 .nav-link:hover {
+    opacity: 0.8;
+}
+
+.header.scrolled .nav-link:hover {
     color: var(--primary-color);
 }
 
@@ -106,8 +131,12 @@
 .mobile-menu-btn span {
     width: 100%;
     height: 2px;
-    background-color: var(--text-color);
+    background-color: white;
     transition: var(--transition);
+}
+
+.header.scrolled .mobile-menu-btn span {
+    background-color: var(--text-color);
 }
 
 .mobile-menu-btn.active span:nth-child(1) {
