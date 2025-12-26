@@ -357,17 +357,15 @@ class LoadingAnimations {
         loader.innerHTML = `
             <div class="loader-content">
                 <div class="loader-logo">
-                    <svg viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
-                    </svg>
+                    <img src="/assets/img/newLogo.svg" alt="Treize Elec Logo">
                 </div>
-                <div class="loader-text">Treize Elec</div>
+                <div class="loader-text">TREIZELEC</div>
                 <div class="loader-progress"></div>
             </div>
         `;
-        
+
         document.body.appendChild(loader);
-        
+
         // Hide loader when page is loaded
         window.addEventListener('load', () => {
             requestAnimationFrame(() => {
