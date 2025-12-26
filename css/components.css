@@ -58,6 +58,7 @@
 .logo img {
     height: 80px;
     width: auto;
+   background: transparent;
 }
 
 .desktop-nav {
